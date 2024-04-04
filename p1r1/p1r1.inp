@@ -1,0 +1,24 @@
+#
+# P1R1 PBE0 with tight SCF convergence criteria
+#
+! PBE0 def2-TZVP def2/J TightSCF Grid4 FinalGrid5 NMGrad Normalprint Printbasis PrintMOs
+#
+%maxcore 3072
+#
+%pal
+  nprocs 28
+end
+#
+%tddft
+  nroots 10   
+  maxdim 10
+  tda false
+end
+#
+%rr 
+  states 1,2,3,4,5,6,7,8,9,10
+  HessName "p1r1.hess"
+  ASAInput true
+end
+#
+* xyzfile 0 1 p1r1.xyz
