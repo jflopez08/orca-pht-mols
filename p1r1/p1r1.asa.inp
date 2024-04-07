@@ -4,11 +4,11 @@
 %sim
          model IMDHO
          method Heller
-         AbsRange     5000.0,  100000.0
-         NAbsPoints    0
+         AbsRange     10000.0,  100000.0
+         NAbsPoints    2048
 
-         FlRange      5000.0,  100000.0
-         NFlPoints     0
+         FlRange      10000.0,  100000.0
+         NFlPoints     2048
 
          MCDRange     5000.0,  100000.0
          NMCDPoints    0
